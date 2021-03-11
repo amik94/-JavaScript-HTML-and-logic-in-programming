@@ -1,0 +1,34 @@
+<!-- 
+    Codigo versão 2 
+    o mesmo código, mas escrito de maneira diferente:
+-->
+
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function exibeTitulo(titulo) {
+        document.write("<h1>" + titulo + "</h1>");
+        pulaLinha();
+    }
+
+    function exibeParagrafo(paragrafo){
+        document.write("<p>" + paragrafo + "</p>");
+        pulaLinha();
+    }
+
+    exibeTitulo("Olá");
+    exibeParagrafo("Seja bem-vindo!!!");
+
+</script>
+
+<!--
+    Mesmo para quem nunca programou, ler as funções exibeTitulo e exibeParagrafo deixa claro 
+    o que o programa faz.
+    É claro que podemos até usar diretamente o document.write. Mas, a ideia é que para exibir 
+    um parágrafo, só precisamos chamar exibeParagrafo.
+    As funções são mais do que um conjunto de instruções que podemos chamar a qualquer momento, 
+    elas permitem melhorar a legibilidade do código escondendo sua complexidade.
+-->

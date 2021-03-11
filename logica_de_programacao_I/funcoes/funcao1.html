@@ -1,0 +1,30 @@
+<!--
+    A seguir, eliminaremos a variável puloLinha, e excluiremos também as declarações 
+    de document.write(puloLinha).
+
+    Tudo que estiver entre as chaves pertence à função pulaLinha(). 
+    Um ponto importante - a função é sempre descrita por um verbo, seja ele "pula", "grita", 
+    "comemora", ou qualquer outro -, isto porque ela sempre indica uma ação a ser executada. 
+    Como document.write() pertencerá à função, adicionaremos-na dentro das chaves.
+    Este código é válido, mas sempre dentro de um bloco utilizaremos a tecla "Tab":       
+-->
+
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    let ano = 2021
+
+    document.write("Lui tem " + (ano - 1990) + " anos");
+    pulaLinha();
+    document.write("Mary tem " + (ano - 1992) + " anos");
+    pulaLinha();
+
+    ano = 2022
+    document.write("Alex tem " + (ano - 1985) + " anos");
+
+</script>

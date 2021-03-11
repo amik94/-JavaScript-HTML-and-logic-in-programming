@@ -1,0 +1,32 @@
+<!-- 
+    Função que recebe mais de um parâmetro 
+
+    Helena teve a ideia de criar a função somaDoisNumeros. Esta função precisa receber dois 
+    parâmetros e imprimir como resultado a soma desses dois números. 
+
+    O importante aqui é entender que se a função esta preparada para receber dois parâmetros, 
+    na hora que ela for chamada precisamos passar dois parâmetros. É claro, como já vimos, 
+    na declaração da função, podemos escolher qualquer nome para os parâmetros, mas precisamos 
+    usar esses nomes no bloco da função.
+-->
+
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {        // função 1 sem paramtero
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) { // função 2 parametro 1
+        document.write(frase);
+        pulaLinha()
+    }
+
+    function somaDoisNumeros(numero1, numero2) { // função 3 parametro 2
+        mostra("A soma dos dois números é : " + (numero1, numero2) );
+    }
+
+    somaDoisNumeros(60, 125)
+
+
+</script>

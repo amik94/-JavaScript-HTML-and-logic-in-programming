@@ -1,0 +1,40 @@
+<!-- 
+    Exemplo do codigo errado para depurar no console do navegador (Google):
+
+ 1   <meta charset="UTF-8">
+ 2     <script>
+ 3       alert("Isso");
+ 4       alert("é");
+ 5       alert("um");
+ 6       alert("programa); 
+ 7       alert("sim");
+ 8   </script> 
+
+Retorno do console: debugging.html:6 Uncaught SyntaxError: Invalid or unexpected token 
+-->
+
+<!-- Exemplo do mesmo  codigo correto -->
+
+<meta charset="UTF-8">
+<script>
+    alert("Isso");
+    alert("é");
+    alert("um");
+    alert("programa");
+    alert("sim");
+</script>
+
+<!-- Outro exemplo -->
+
+<meta charset="UTF-8">
+<script>
+    alert("Eu chego lá!")
+</script>
+
+<!--
+    Uso do ponto e vírgula no final de uma instrução JavaScript é opcional e
+    não teremos problemas com sua ausência. Contudo, ao avançar nesta linguagem 
+    você verá determinados processamentos de código podem resultar em algo 
+    não esperado na ausência do ponto e vírgula. Sendo assim, vamos criar desde já o 
+    hábito de terminar uma instrução com o ponto e vírgula.
+-->

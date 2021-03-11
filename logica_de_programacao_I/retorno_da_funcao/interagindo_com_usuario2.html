@@ -1,0 +1,22 @@
+<!--
+    Se quisermos exibir um pop-up, que mostre uma pergunta e permita ao usuário entrar com um valor, 
+    fazemos uso da função prompt.
+-->
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    let numero1 = prompt("Digit o primeiro número");
+    let numero2 = prompt("Digite o segundo número");
+
+    mostra("O valor de " + numero1 + " vezes" + numero2 + " é: " + (numero1 * numero2));
+
+</script>

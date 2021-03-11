@@ -1,0 +1,55 @@
+<!--
+    Calculando o IMC (Índice de Massa Corporal).
+    O cálculo do índice de massa corporal (IMC) é feito dividindo o peso pela altura ao quadrado:
+
+        IMC = peso / (altura * altura)
+
+    Veja que tivemos que recorrer aos parênteses para que o cálculo da altura vezes a altura 
+    seja processado primeiro. Inclusive, temos as duas variáveis do cálculo declaradas como 
+    peso e altura. Se por acaso uma dessas variáveis não tivesse sido declarada, o resultado 
+    da operação não seria o IMC.
+   
+    Portanto, criaremos uma variável chamada peso, e outra, altura.
+-->
+
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+        document.write("<br><br><br>");
+    }
+
+    function mostra(frase) { //"frase" é para metro para função
+        document.write(frase);
+        pulaLinha()
+    }
+
+    /*
+        o IMC será calculado com base nos valores dos parâmetros. Para que os resultados 
+        sejam exibidos, incluiremos a instrução mostra() em nossa função.
+
+        Em vez de espalharmos a fórmula do cálculo do IMC, criamos uma funcionalidade que   
+        está preparada - se passarmos altura, e o peso - para calcular o IMC,
+        e exibir o valor, por meio da função mostra(). Se a fórmula for alterada, o IMC é 
+        calculado pelo método antigo, + 1.
+
+        Só precisaremos alterar a função, não todos os pontos onde ela é chamada. Nesse caso, 
+        trabalhamos com conceitos já conhecidos, entretanto estamos lidando com uma função que 
+        possui dois parâmetros.
+    */
+
+
+    function calculaImc(peso, altura) {
+        let imc = peso / (altura * altura);
+        mostra("O imc calculado é: " + imc) + 1;
+    }
+
+    let peso1 = 62;
+    let altura1 = 1.70;
+    calculaImc(62, 1.70);
+
+    let peso2 = 49;
+    let altura2 = 1.50;
+    calculaImc(peso2, altura2);
+
+</script>

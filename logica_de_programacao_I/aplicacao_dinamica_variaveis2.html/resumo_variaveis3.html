@@ -1,0 +1,86 @@
+<!--
+    As variáveis não podem guardar somente números
+
+        let nome = 'Ana';
+
+        document.write('A idade de  ' + nome + ' é ' + idadeAna);
+
+    No JavaScript, podemos utilizar tanto as aspas simples (') quanto aspas (").
+    Colocaremos as aspas duplas, mesmo porque outras linguagens de programação 
+    as utilizam.
+
+        let nome = "Ana";
+
+        document.write("A idade de  " + nome + " é " + idadeAna);
+
+    O comando document.write tem como parâmetro a string A idade de, 
+    concatenada com a variável nome. O JavaScript verificará qual o conteúdo 
+    do let nome, no caso, Ana. A junção destas duas resultara em uma única string. 
+    O resultado final desta primeira parte da concatenação será:
+
+        "A idade de Ana".
+
+    Por fim, será somado à string a variável idadeAna, cujo valor é um número. 
+    Como string combinado com número resulta em outra string, teremos:
+
+        "A idade de Ana é 30".
+
+    Sendo assim, quando o comando abaixo for executado,
+
+        document.write("A idade de " + nome + " é " + idadeAna);
+
+    Teremos o seguinte resultado:
+
+        A idade de Ana é 30
+
+    Salvaremos o programa, retornaremos ao navegador e recarregaremos a página. 
+    Obtivemos o seguinte resultado:
+
+        Ana tem 30 anos
+        Mariana tem 32 anos
+        Lucas tem 28 anos
+        A média das idades é 33A idade de Ana é 30
+
+    Como vemos, o texto ficou agrupado ao resultado da média das idades. 
+    Podemos incluir a tag <br> para pular uma linha:
+
+        document.write("<br>A idade de " + nome + " é " + idadeAna);
+
+    Ao salvarmos e recarregarmos a página, teremos o seguinte resultado:
+
+        Ana tem 30 anos
+        Mariana tem 32 anos
+        Lucas tem 28 anos
+        A média das idades é 30
+        A idade de Ana é 30
+-->
+
+<meta charset="UTF-8">
+<script>
+
+    let ano = 2021;
+
+    document.write("Ana tem " + (ano - 1991) + " anos");
+    document.write("<br>");
+    document.write("Marina tem " + (ano - 1989) + " anos");
+    document.write("<br>");
+
+
+    ano = 2022;
+    document.write("Lucas tem " + (ano + 1994) + " anos");
+    document.write("<br>");
+
+    let idadeAna = 30;
+    let idadeMarina = 32;
+    let idadeLucas = 28;
+
+    let media = (idadeAna + idadeMarina + idadeLucas) / 3;
+
+    document.write("A media das idade é " + Math.round(media));
+
+    let nome = "Ana";
+
+    document.write("<br>");
+    document.write("A idade de " + nome + "é" + idadeAna);
+
+</script>

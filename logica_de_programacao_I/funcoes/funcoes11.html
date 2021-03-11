@@ -1,0 +1,35 @@
+<!--
+Escreva um programa que exiba a mensagem "Nossa diferença de idade é", concatenando o 
+resultado da subtração da sua idade com a do seu irmão (ou de um amigo). A resposta pode 
+dar negativa, sem dúvida. Não esqueça de usar as funções pulaLinha e mostra e inclusive a 
+tag <meta> para resolver problema de acentuação.
+-->
+
+<meta charset="UTF-8">
+<script>
+
+    document.write("<h1>Relatório de idades</h1>");
+
+    function pulaLinha() {
+        document.write("<br><br><br>");
+    }
+
+    function mostraNaTela(frase) {
+        document.write(frase);
+    }
+
+
+    let idade1 = 35;
+    document.write("idade dele é: " + idade1);
+    pulaLinha()
+
+    let idade2 = 25;
+    document.write("idade dela é: " + idade2);
+    pulaLinha()
+
+    let totalIdade = idade1 - idade2;
+
+    mostraNaTela("Nossa diferença de idade é:  " + totalIdade);
+
+
+</script>

@@ -1,0 +1,25 @@
+<!--
+   o retorno da função calculaImc para a variável imcCalculado
+-->
+<meta charset="UTF_8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso){
+        
+        let imc = peso / (altura * altura);
+        return imc; //adicionando o return dentro do bloco da função, o que estiver a direita 
+                    //do return será o valor retornado pela função. 
+    }
+
+    let imcCalculado = calculaImc(1.77, 75);
+    mostra("O meu IMC é: " + imcCalculado);
+
+</script>

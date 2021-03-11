@@ -1,0 +1,33 @@
+<!--
+    as variáveis podem nos blindar desse tipo de situação. 
+    Abaixo da variável ano, criaremos a variável puloLinha, a que 
+    adicionaremos o "<br>":
+
+        let puloLinha = "<br>";
+
+    No lugar de passarmos o "<br>" para o document.write(), poderemos 
+    passar direto a seguinte variável:
+
+        document.write(puloLinha);
+
+    Na hora em que o document.write() for ser acessado, ele irá pegar o 
+    conteúdo da variável, a tag <br>.  
+-->
+
+<meta charset="UTF-8">
+<script>
+
+    let ano = 2021
+    let puloLinha = "<br>"
+
+    document.write("Lui tem " + (ano - 1990) + " anos");
+    document.write(puloLinha);
+    document.write("Mary tem " + (ano - 1992) + " anos");
+    document.write(puloLinha);
+
+    ano = 2022
+    document.write("Alex tem " + (ano - 1985) + " anos");
+
+</script>
+
+

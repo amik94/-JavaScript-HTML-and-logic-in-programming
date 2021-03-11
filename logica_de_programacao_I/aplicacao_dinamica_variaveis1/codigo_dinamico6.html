@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<script>
+
+    let ano = 2021;
+
+    document.write("Ana tem " + (ano - 1991) + " anos");
+    document.write("<br>");
+    document.write("Mariana tem " + (ano - 1989) + " anos");
+    document.write("<br>");
+
+    ano = 2022
+    document.write("Lucas tem " + (ano - 1994) + " anos");
+    document.write("<br>");
+
+</script>
+
+<!--
+    O navegador processará a tag <script> linha a linha, na ordem em que 
+    foram declaradas. Na primeira, teremos a informação de que a variável 
+    ano recebe o valor 2022. Portanto, conforme o código acima, 
+    para Ana e Marina o valor considerado será 2021.
+
+    Temos uma linha mais abaixo em que declaramos que a variável ano terá 2022 
+    como valor. Assim, tudo que estiver abaixo dela deverá considerar a variável
+    desta forma, ou seja, Lucas, por exemplo, terá como ano base 2022.
+
+    O prefixo "let" só é utilizado ao declararmos a variável pela primeira vez, 
+    então não é necessário utilizá-lo ao definirmos um novo valor. 
+    As variáveis nos ajudam, também, a fazer a manutenção de nosso código, 
+    já que ela é declarada em um único ponto e pode ser utilizada em diversos 
+    momentos.
+-->

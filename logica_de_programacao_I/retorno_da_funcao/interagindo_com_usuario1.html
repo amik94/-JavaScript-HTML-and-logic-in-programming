@@ -1,0 +1,68 @@
+<!-- IMC - Interagindo com Usuario -->
+
+
+
+
+<meta charset="UTF-8">
+<script>
+
+    /* Temos as funções pulaLinha(), mostra() e calculaImc() */
+
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+        return peso / (altura * altura);
+    }
+
+    /* ----------------------APLICANDO A INTERAÇÃO COM USUARIO---------------------------- */
+
+    //criaremos em seguida três variáveis "let", nome,  alturaInformada e pesoInformado:
+
+    /* A variável nome guardará o nome que foi digitado no prompt(). Ele será concatenado nas próximas mensagens, 
+    para que fiquem mais pessoais.
+    
+    A função prompt é a primeira forma que aprendemos para capturar a entrada do usuário.
+    Ela é uma função que recebe parâmetro e possui retorno.*/
+
+    let nome = prompt("Informe o seu nome");
+
+    //para incluir popup da altura 
+    let alturaInformada = prompt(nome + ", informe a sua altura");
+    //para incluir popup do peso
+    let pesoInformado = prompt(nome + ", informe o seu peso");
+
+
+     /*
+        Para calcular o IMC, abaixo das variáveis que acabamos de criar, teremos a let
+        imc, que receberá o calculaImc() com os parâmetros alturaInformada e pesoInformado:
+    */
+
+    let imc = calculaImc(alturaInformada, pesoInformado);
+
+    /*
+        Para que as informações de um novo usuário sejam inseridas, basta recarregarmos a página.
+        Como o programa será executado novamente, todas as instruções serão processadas.
+    */
+
+    /* para exibir, incluiremos uma instrução document.write() abaixo da variável imc:*/
+
+    document.write(nome + ", o seu IMC é: " + imc )
+    
+    /*   
+    Salvando o programa, obteremos o seguinte resultado no navegador: O IMC calculado é 24.96..*/
+
+    /*
+    Temos um programa genérico que cada pessoa que o utilizar pode recarregar para informar seus dados pessoais!
+    
+    */
+
+    
+</script>
